@@ -6,7 +6,7 @@ const form = document.getElementById('form');
 const body = document.querySelector('body');
 const buttonsContainer = document.getElementById('buttonsC');
 const spanTimmer = document.getElementById('spanTimmer');
-const titleContainerContainer = document.getElementById('titleContainer');
+const titleContainer = document.getElementById('titleContainer');
 const timmerContainer = document.getElementById('timmerContainer');
 
 //Questions variable & labels
@@ -93,12 +93,9 @@ send.addEventListener('click', () => {
         question5.value.toLowerCase() === answer5.toLocaleLowerCase()
     ) {
         body.style=`
-            background-repeat: no-repeat;
-            height: 100vh; 
-        
-        
-        
-        `
+            background-repeat: round;
+            object-fit: fill;
+    `
         form.innerHTML = `
             <div id="congrats">
                 <h2>¡Felicidades, has adivinado todas las preguntas!</h2>
@@ -264,11 +261,8 @@ start.addEventListener('click', () => {
                 question5.value.toLowerCase() === answer5.toLocaleLowerCase()
             ) {
                 body.style=`
-                    background-repeat: no-repeat;
-                    height: 100vh; 
-                
-                
-                
+                    background-repeat: round;
+                    object-fit: fill;
                 `
                 form.innerHTML = `
                     <div id="congrats">
