@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    background-image: url(../assets/background.jpg);
+    background-repeat: round;
+    object-fit: fill;
+
+}
+.generalContainer{
+    display: flex;
+    justify-content: center;
+}
+.timmerContainer{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.spanConteiner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #919191;
+    opacity: .98;
+    color: #f2f2f2f2;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(to right top, #f2353b, #f34b43, #f45c4d, #f56b56, #f57961);
+    opacity: .98;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #DB5614;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    color: #f2f2f2;
+}
+.title h2{
+    width: 70%;
+    font-size: 15px;
+    font-weight: 900;
+    text-align: center;
+    background-color: #F0DF2F;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.questions{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.questions label{
+    font-size: 16px;
+    color: #f2f2f2f2;
+}
+.questions input{
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #A3D1AF;
+}
+.questions input:focus{
+    border: 3px solid #f2f2f2f2;
+    outline: none;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.buttons button{
+    height: 30px;
+    width: 100px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #919191;
+    color: #f2f2f2f2;
+}
+
+.buttons button:hover{
+    border: 2px solid #f2f2f2;
+}
+.buttons button:active{
+    border: 2px solid black;
+}
